@@ -1,9 +1,11 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
-[[redirects]]
-  from = "https://www.fincomun.com.mx/"
-  to = "/index.html"
+  [[redirects]]
+  from = "/*"
+  to = "https://www.fincomun.com.mx"
   status = 200
+  force = true
+  headers = {X-From = "Netlify"}
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
