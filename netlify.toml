@@ -7,6 +7,6 @@
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
+  for = "https://www.fincomun.com.mx/"
     [headers.values]
     Access-Control-Allow-Origin = "*"
