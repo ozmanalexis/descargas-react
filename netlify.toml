@@ -1,7 +1,7 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
   [[redirects]]
-  from = "/*"
+  from = "videos/*"
   to = "https://www.fincomun.com.mx/"
   status = 200
   force = true
