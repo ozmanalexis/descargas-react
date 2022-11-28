@@ -5,19 +5,25 @@ function App() {
   
   const handleDownloadVideo = async () => {
     try {
-      const proxyurl = "https://ephemeral-torte-31ffe2.netlify.app/";
+      const proxyurl = "http://localhost:3000/";
       const url = 'https://www.fincomun.com.mx/videos/VIDEO_NUEVA_NORMALIDAD.mp4';
       //const videoRequest = new Request(url);
-      fetch(proxyurl + url)
-        .then(() => {
-          const link = document.createElement('a');
-          link.href = url;
-          link.target = '_blank';
-          link.setAttribute('download', 'video.mp4');
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        });
+      fetch( url)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(
+          new Blob([blob]),
+        );
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute(
+          'download',
+          `FileName.mp4`,
+        );
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
+      });
     } catch (error) {
       console.error(error);
     }
