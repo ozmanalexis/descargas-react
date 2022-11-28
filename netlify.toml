@@ -1,8 +1,4 @@
-[[redirecciones]] 
-  de = "/api/*" 
-  a = "https://ephemeral-torte-31ffe2.netlify.app/" 
-  estado = 200
-[[redirecciones]] 
-  de = "/*" 
-  a = "/index.html" 
-  estado = 200
+  [[redirects]]
+  from = "https://www.fincomun.com.mx/*"
+  to = "https://ephemeral-torte-31ffe2.netlify.app/"
+  status = 200
