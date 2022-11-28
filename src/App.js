@@ -5,7 +5,7 @@ function App() {
   
   const handleDownloadVideo = async () => {
     try {
-      const proxyurl = "https://shrouded-refuge-96344.herokuapp.com/";
+      const proxyurl = "https://ephemeral-torte-31ffe2.netlify.app/";
       const url = 'https://www.fincomun.com.mx/videos/VIDEO_NUEVA_NORMALIDAD.mp4';
       //const videoRequest = new Request(url);
       fetch(proxyurl + url)
