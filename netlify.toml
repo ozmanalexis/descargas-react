@@ -1,0 +1,8 @@
+[[redirecciones]] 
+  de = “/api/*” 
+  a = “https://ephemeral-torte-31ffe2.netlify.app/" 
+  estado = 200
+[[redirecciones]] 
+  de = “/*” 
+  a = “/index.html” 
+  estado = 200
