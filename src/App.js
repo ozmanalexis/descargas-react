@@ -12,6 +12,7 @@ function App() {
         .then(() => {
           const link = document.createElement('a');
           link.href = url;
+          link.setAttribute('download', 'video.mp4');
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -24,7 +25,7 @@ function App() {
     
     <div className="App">
       <header className="App-header">
-      <h1>DESCARGAR VIDEO</h1>
+      <h1>DESCARGAR VIDEO IPHONE</h1>
         <button id='download' type='button' onClick={handleDownloadVideo}>DESCARGAR</button>
 
       </header>
