@@ -1,4 +1,12 @@
-  [[redirects]]
+# The following redirect is intended for use with most SPAs that handle
+# routing internally.
+[[redirects]]
   from = "https://www.fincomun.com.mx/*"
-  to = "https://ephemeral-torte-31ffe2.netlify.app/"
+  to = "/index.html"
   status = 200
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "https://www.fincomun.com.mx/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
