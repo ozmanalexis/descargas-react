@@ -5,7 +5,7 @@ function App() {
   
   const handleDownloadVideo = async () => {
     try {
-      const proxyurl = "http://localhost:3000/";
+      //const proxyurl = "http://localhost:3000/";
       const url = 'https://www.fincomun.com.mx/videos/VIDEO_NUEVA_NORMALIDAD.mp4';
       //const videoRequest = new Request(url);
       fetch( url)
