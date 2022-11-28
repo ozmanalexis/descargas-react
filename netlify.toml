@@ -1,7 +1,7 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
   [[redirects]]
-  from = "videos/*"
+  from = "/*"
   to = "https://www.fincomun.com.mx/"
   status = 200
   force = true
@@ -9,6 +9,6 @@
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
-  for = "https://ephemeral-torte-31ffe2.netlify.app/"
+  for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
