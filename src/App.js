@@ -15,7 +15,7 @@ function App() {
         link.href = url;
         link.setAttribute(
           'download',
-          `FileName.mp4`,
+          "video" + Date.now() + ".mp4",
         );
           document.body.appendChild(link);
           link.click();
