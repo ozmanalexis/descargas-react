@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   const handleDownloadVideo = async () => {
     try {
-      const url = 'https://www.fincomun.com.mx/videos/VIDEO_NUEVA_NORMALIDAD.mp4';
+      const url = 'http://localhost:3000/videos/FileName.mp4';
       //const videoRequest = new Request(url);
       fetch(url)
       .then((response) => response.blob())
@@ -30,7 +30,7 @@ function App() {
     
     <div className="App">
       <header className="App-header">
-      <h1>DESCARGAR VIDEO IPHONEs</h1>
+      <h1>DESCARGAR VIDEO IPHONE</h1>
         <button id='download' type='button' onClick={handleDownloadVideo}>DESCARGAR</button>
 
       </header>
