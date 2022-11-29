@@ -30,7 +30,7 @@ function App() {
     
     <div className="App">
       <header className="App-header">
-      <h1>DESCARGAR VIDEO IPHONEs</h1>
+      <h1>DESCARGAR VIDEO IPHONE</h1>
         <button id='download' type='button' onClick={handleDownloadVideo}>DESCARGAR</button>
 
       </header>
