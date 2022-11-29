@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   const handleDownloadVideo = async () => {
     try {
-      const url = 'http://localhost:3000/videos/FileName.mp4';
+      const url = 'https://ephemeral-torte-31ffe2.netlify.app/videos/FileName.mp4';
       //const videoRequest = new Request(url);
       fetch(url)
       .then((response) => response.blob())
