@@ -1,9 +1,10 @@
 import './App.css';
+const cors = require('cors');
 
 function App() {
   
   const handleDownloadVideo = async () => {
-    fetch('https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4', {
+    fetch(cors('https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4'), {
       method: 'GET',
       headers: {
         'Content-Type': 'application/mp4',
@@ -18,7 +19,7 @@ function App() {
       link.href = url;
       link.setAttribute(
         'download',
-        `FileName.pdf`,
+        `FileName.mp4`,
       );
       document.body.appendChild(link);
       link.click();
